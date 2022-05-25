@@ -78,12 +78,12 @@ io.on("connection", (socket) => {
      jwt.verify(socket.handshake.auth.token, config.JwtSecret);
      if (interval[socket.id])
          clearInterval(interval[socket.id]);
-     interval[socket.id] = setInterval(() => authorisedSend(socket), 1000);
+     interval[socket.id] = setInterval(() => authorisedSend(socket), 10000);
   }
   catch(error){
     if (interval[socket.id])
         clearInterval(interval[socket.id]);
-    interval[socket.id] = setInterval(() => anonymousSend(socket), 1000);
+    interval[socket.id] = setInterval(() => anonymousSend(socket), 10000);
   }
   finally{
     socket.on("disconnect", () => {

@@ -6,7 +6,7 @@ import mongoose from 'mongoose';
 const userEndpoint = (router) => {
 
 
-    router.post('/api/user/login', async (request, response, next) => {
+    router.post('/api/user', async (request, response, next) => {
         try {
             const result = await business.getUserManager().auth(request.body);
             response.status(200).send(result);
@@ -14,7 +14,7 @@ const userEndpoint = (router) => {
             appException.errorHandler(error, response);
         }
     });
-    router.delete('/api/user/login',auth, async (request, response, next) => {
+    router.delete('/api/user',auth, async (request, response, next) => {
         try {
             const data = {};
             data.token = request.headers["authorization"];
