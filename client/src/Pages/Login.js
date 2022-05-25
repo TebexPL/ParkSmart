@@ -17,7 +17,7 @@ function Login(props) {
        }
 
        try{
-         const res = await fetch("http://localhost:3001/api/user", {
+         const res = await fetch("https://park--smart.herokuapp.com/api/user", {
            method: "POST",
            headers: {'Content-Type': 'application/json'},
            body: JSON.stringify(data)

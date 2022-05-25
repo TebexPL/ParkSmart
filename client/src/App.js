@@ -11,11 +11,11 @@ import Login from "./Pages/Login.js";
 function App() {
   const loggedIn = !isExpired(localStorage.getItem('token'));
   const token = localStorage.getItem('token');
-  const socket = loggedIn?io("http://localhost:3001", {
+  const socket = loggedIn?io("https://park--smart.herokuapp.com", {
     auth: {
       token:token
     }
-  }):io("http://localhost:3001");
+  }):io("https://park--smart.herokuapp.com");
   return (
         <Router>
           <Navbar />

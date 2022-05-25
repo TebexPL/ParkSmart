@@ -14,7 +14,7 @@ function History(props) {
     async function fetchData(){
       try {
 
-        const res = await fetch("http://localhost:3001/api/history", {
+        const res = await fetch("https://park--smart.herokuapp.com/api/history", {
           method: "GET",
           headers: {'authorization': token},
         })
@@ -24,10 +24,10 @@ function History(props) {
         }
 
         const data = await res.json();
-        const sectionsData = await (await fetch("http://localhost:3001/api/section")).json();
+        const sectionsData = await (await fetch("https://park--smart.herokuapp.com/api/section")).json();
 
         for(let section of sectionsData){
-          const spaces = await (await fetch("http://localhost:3001/api/space/"+section._id)).json();
+          const spaces = await (await fetch("https://park--smart.herokuapp.com/api/space/"+section._id)).json();
           section.spaces=spaces;
         }
 

@@ -13,7 +13,7 @@ function Navbar() {
       try{
         const data = {}
         data.token=token;
-        await fetch("http://localhost:3001/api/user", {
+        await fetch("https://park--smart.herokuapp.com/api/user", {
           method: "DELETE",
           headers: {'authorization': token},
         })

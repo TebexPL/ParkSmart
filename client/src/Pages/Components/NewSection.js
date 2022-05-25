@@ -33,7 +33,7 @@ function NewSection(props) {
     nameBox.placeholder = "Creating...";
 
     try{
-      const res = await fetch("http://localhost:3001/api/section", {
+      const res = await fetch("https://park--smart.herokuapp.com/api/section", {
         method: "POST",
         headers: {'authorization': token, 'Content-Type': 'application/json'},
         body: JSON.stringify(data)

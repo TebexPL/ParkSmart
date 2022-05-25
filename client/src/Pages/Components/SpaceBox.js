@@ -23,7 +23,7 @@ function SpaceBox(props) {
 
       data.spaceID = props.data._id;
       try{
-        const res = await fetch("http://localhost:3001/api/space/name", {
+        const res = await fetch("https://park--smart.herokuapp.com/api/space/name", {
           method: "PUT",
           headers: {'authorization': token, 'Content-Type': 'application/json'},
           body: JSON.stringify(data)
@@ -62,7 +62,7 @@ function SpaceBox(props) {
         try{
           const data={}
           data.spaceID = props.data._id;
-          const res = await fetch("http://localhost:3001/api/space", {
+          const res = await fetch("https://park--smart.herokuapp.com/api/space", {
             method: "DELETE",
             headers: {'authorization': token, 'Content-Type': 'application/json'},
             body: JSON.stringify(data)

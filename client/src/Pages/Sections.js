@@ -16,10 +16,10 @@ function Sections(props) {
 
     async function fetchData(){
       try {
-        const data = await (await fetch("http://localhost:3001/api/section")).json();
+        const data = await (await fetch("https://park--smart.herokuapp.com/api/section")).json();
 
         for(let section of data){
-          const spaces = await (await fetch("http://localhost:3001/api/space/"+section._id)).json();
+          const spaces = await (await fetch("https://park--smart.herokuapp.com/api/space/"+section._id)).json();
           section.spaces=spaces;
           section.expanded=false;
         }
