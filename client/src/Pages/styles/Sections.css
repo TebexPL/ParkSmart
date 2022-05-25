@@ -1,0 +1,28 @@
+.Collapsible {
+
+}
+.Collapsible__trigger {
+
+}
+
+.sectionsMain{
+  min-height: 90vh;
+  background-color: #21252B;
+
+}
+
+.collapseDiv {
+  display: flex;
+
+}
+.Load {
+
+    height: 90vh;
+    background-color: #21252B;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+
+}

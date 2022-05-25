@@ -1,0 +1,18 @@
+.historyitem {
+padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ABB1BD;
+  background-color: #31353B;
+  border-bottom: 1px #5a5a5a solid;
+}
+.historyheader{
+padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #ABB1BD;
+  background-color: #21252B;
+  border-bottom: 1px #5a5a5a solid;
+}

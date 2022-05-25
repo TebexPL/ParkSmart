@@ -1,0 +1,46 @@
+.spaceDiv {
+margin: 10px;
+width:11%;
+height: 32vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #31353B;
+color: #8B919D;
+}
+.spaceDiv p{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.spaceDiv input{
+  margin: 10px;
+  width: 70%;
+  height: 30px;
+  border: none;
+  background-color: #21252B;
+  color: #8B919D;
+  text-align: center;
+}
+.spaceDiv button{
+  flex: 1;
+  border: none;
+  background-color: #41454B;
+  color: silver;
+  margin: 5px;
+  width: 60%;
+  height: 40%;
+
+}
+
+.spaceDiv button:hover{
+  flex: 1;
+border: none;
+background-color: #11151B;
+color: silver;
+cursor: pointer;
+}

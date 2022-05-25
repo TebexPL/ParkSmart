@@ -1,0 +1,12 @@
+.history {
+
+  width:100%;
+  background-color: #21252B;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.history p{
+  width: 20%
+}

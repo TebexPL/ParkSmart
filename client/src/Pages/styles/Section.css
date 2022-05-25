@@ -1,0 +1,104 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.trigDiv {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: grey;
+  border-bottom: 1px #5a5a5a solid;
+  background-color: #31353B;
+  color: #8B919D;
+  cursor: pointer;
+}
+
+.trigDivHeader {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: grey;
+  border-bottom: 1px #5a5a5a solid;
+  background-color: #21252B;
+  color: #8B919D;
+}
+.trigDivHeader p{
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+}
+.trigDiv div{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+
+.trigDiv input{
+  flex: 1;
+border: none;
+background-color: #21252B;
+color: #8B919D;
+  margin-left: 5px;
+  margin-right: 10px;
+  height: 50%;
+  padding-left: 15px;
+  padding-right: 10px;
+  text-align: center;
+}
+.trigDiv button{
+  flex: 1;
+  border: none;
+  background-color: #41454B;
+  color: silver;
+  margin-right: 30px;
+  height: 50%;
+
+}
+
+.trigDiv button:hover{
+  flex: 1;
+border: none;
+background-color: #11151B;
+color: silver;
+cursor: pointer;
+}
+
+.trigDiv p{
+  flex: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.arrow {
+  text-align: right;
+}
+
+.spaces {
+  flex-wrap:wrap;
+}
